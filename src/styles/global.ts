@@ -1,21 +1,26 @@
-export const defaultTheme = {
-  'white': '#FFF',
+import { createGlobalStyle } from 'styled-components';
 
-  'background': '#FAFAFA',
-  'base-card': '#F3F2F2',
-  'base-input': '#EDEDED',
-  'base-button': '#E6E5E5',
-  'base-hover': '#D7D5D5',
-  'base-label': '#8D8686',
-  'base-text': '#574F4D',
-  'base-subtitle': '#403937',
-  'base-title': '#272221',
+export const GlobalStyle = createGlobalStyle`
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-  'purple-light': '#EBE5F9',
-  'purple': '#8047F8',
-  'purple-dark': '#4B2995',
+  body {
+    background: ${props => props.theme.background};
+    color: ${props => props.theme['base-text']};
+    --webkit-font-smoothing: antialiased;
+  }
 
-  'yellow-light': '#F1E9C9',
-  'yellow': '#DBAC2C',
-  'yellow-dark': '#C47F17',
-};
+  h1, h2, h3, h4 {
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 800;
+    line-height: 130%;
+  }
+
+  body, button, input {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+  } 
+`;
