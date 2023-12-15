@@ -3,14 +3,14 @@ import { defaultTheme } from './styles/themes/default'
 import { GlobalStyle } from './styles/global'
 import Header from './components/Header'
 
+import Home from './pages/Home'
+
 function App() {
 
   return (
     <ThemeProvider theme={defaultTheme}>
-      <div>
-        <Header />
-        <h1>Coffee Shop</h1>
-      </div>
+      <Header />
+      <Home />
       <GlobalStyle />
     </ThemeProvider>
   )
