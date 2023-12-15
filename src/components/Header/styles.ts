@@ -14,7 +14,6 @@ export const InsideContent = styled.div`
   align-items: center;
   width: 100%;
   max-width: 70rem;
-
 `;
 
 export const RightContent = styled.div`

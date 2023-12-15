@@ -10,11 +10,13 @@ export const TopSection = styled.section`
   justify-content: center;
 `;
 
-export const TitleAndDescription = styled.div`
-  max-width: 36.75rem;
+export const InfoContent = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
+  /* text-align: center; */
   gap: 1rem;
+  width: 100%;
 `;
 
 export const Title = styled.h1`
@@ -27,5 +29,30 @@ export const Description = styled.p`
 `;
 
 export const Content = styled.div`
-  padding: 0 10rem;
+  width: 100%;
+  padding: 2rem;
+  max-width: 74rem;
+  gap: 3.5rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  
+  @media (max-width: 1025px) {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 1rem;
+    max-width: 40rem;
+
+    .coffee-image {
+      width: 380px;
+    }
+  }
+`;
+
+export const Aside = styled.aside`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 `;
