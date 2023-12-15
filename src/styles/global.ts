@@ -11,7 +11,6 @@ export const GlobalStyle = createGlobalStyle`
     background: ${props => props.theme.background};
     color: ${props => props.theme['base-text']};
     --webkit-font-smoothing: antialiased;
-    padding: 0 10rem;
   }
 
   h1, h2, h3, h4 {

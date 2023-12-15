@@ -2,9 +2,19 @@ import styled from 'styled-components';
 
 export const Container = styled.header`
   display: flex;
-  padding: 2rem 0;
+  flex: 1;
+  justify-content: center;
+  padding: 2rem;
+  position: sticky;
+`;
+
+export const InsideContent = styled.div`
+  display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  max-width: 70rem;
+
 `;
 
 export const RightContent = styled.div`
