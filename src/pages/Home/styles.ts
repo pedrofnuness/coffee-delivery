@@ -14,7 +14,6 @@ export const InfoContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* text-align: center; */
   gap: 1rem;
   width: 100%;
 `;
@@ -40,19 +39,51 @@ export const Content = styled.div`
   @media (max-width: 1025px) {
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
     text-align: center;
     gap: 1rem;
     max-width: 40rem;
 
     .coffee-image {
-      width: 380px;
+      width: 320px;
     }
   }
+`;
+
+export const AboutService = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-top: 4.12rem;
+
+  @media (max-width: 1025px) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0
+  }
+`;
+interface ColorIconProps {
+  bgColor: string;
+}
+
+export const ColorIcon = styled.div<ColorIconProps>`
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  background-color: ${props => props.theme[props.bgColor]};
+`;
+
+export const AboutItem = styled.div`
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
 `;
 
 export const Aside = styled.aside`
   display: flex;
   align-items: center;
   justify-content: center;
-
 `;
