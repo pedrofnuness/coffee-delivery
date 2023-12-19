@@ -1,9 +1,9 @@
-import React from 'react'
 import coffeeImage from '../../assets/coffeeImage.png'
-import * as Styled from './styles';
 import { Coffee, Package, ShoppingCart, Timer } from 'phosphor-react';
 
-export default function Home() {
+import * as Styled from './styles';
+
+export function HeroSection() {
   return (
     <Styled.TopSection>
       <Styled.Content>
