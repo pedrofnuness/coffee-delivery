@@ -4,7 +4,6 @@ export const TopSection = styled.section`
   background: url('src/assets/background.png') no-repeat center;
   background-size: cover;
   width: 100%;
-  height: 34rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,10 +28,11 @@ export const Description = styled.p`
 
 export const Content = styled.div`
   width: 100%;
+  height: 34rem;
   padding: 2rem;
   max-width: 74rem;
   gap: 3.5rem;
-
+  
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   
@@ -42,6 +42,7 @@ export const Content = styled.div`
     align-items: center;
     text-align: center;
     gap: 1rem;
+    height: 100%;
     max-width: 40rem;
 
     .coffee-image {
