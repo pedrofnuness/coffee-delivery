@@ -1,18 +1,19 @@
-import * as coffeImage from '../assets'
+/* eslint-disable prettier/prettier */
+import * as coffeImage from '../assets';
 
 type CoffeeTypes = 'REGULAR' | 'ICED' | 'WITH_MILK' | 'SPECIALTY' | 'ALCOHOLIC';
 
 interface Coffee {
-  image: string,
-  type: CoffeeTypes[],
-  title: string,
-  description: string,
-  price: number,
+  image: string;
+  type: CoffeeTypes[];
+  title: string;
+  description: string;
+  price: number;
 }
 
-export const coffeeList: Coffee[] = [
+export const coffeeListMock: Coffee[] = [
   {
-    image: coffeImage.americanEspresso,
+    image: coffeImage.espresso,
     type: ['REGULAR'],
     title: 'Traditional Espresso',
     description: 'The traditional coffee made with hot water and ground beans',

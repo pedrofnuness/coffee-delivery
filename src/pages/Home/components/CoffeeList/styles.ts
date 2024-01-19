@@ -1,37 +1,110 @@
 import styled from 'styled-components';
 
 export const ListContainer = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 2rem 0 4rem 0;
-  gap: 3.38rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 2rem 0 4rem 0;
+	gap: 3.38rem;
 
-  h2 {
-    font-size: 2rem;
-    color: ${props => props.theme['base-subtitle']}
-  }
+	h2 {
+		font-size: 2rem;
+		color: ${(props) => props.theme['base-subtitle']};
+	}
 `;
 
 export const CofeeList = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
-  column-gap: 2rem;
-  row-gap: 3.5rem;
-  justify-items: center;
-  padding: 0 2rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+	column-gap: 2rem;
+	row-gap: 3.5rem;
+	justify-items: center;
+	padding: 0 2rem;
 
-  max-width: 74rem;
-  width: 100%;
-
-  h3 {
-    font-size: 1.25rem ;
-  }
+	max-width: 74rem;
+	width: 100%;
 `;
 
 export const CofeeContent = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+	padding: 1.25rem 1.5rem;
+
+	text-align: center;
+
+	h3 {
+		font-size: 1.25rem;
+		margin-bottom: 0.5rem;
+	}
+
+	img {
+		margin-top: -2.5rem;
+	}
+`;
+
+export const Description = styled.p`
+	font-size: 0.875rem;
+	color: ${(props) => props.theme['base-label']};
+
+	flex-grow: 1;
+`;
+
+export const PriceContainer = styled.div`
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+
+	.pickQuantity {
+		display: flex;
+		gap: 0.5rem;
+	}
+`;
+
+export const AddToCartButton = styled.button`
+	border: none;
+	padding: 0.5rem;
+	display: flex;
+	align-items: center;
+	border-radius: 8px;
+	background-color: ${(props) => props.theme['purple-dark']};
+`;
+
+export const TypeContainer = styled.div`
+	display: flex;
+	gap: 0.5rem;
+	padding: 0.75rem 0 1rem;
+`;
+
+export const TypeSpan = styled.span`
+	background-color: ${(props) => props.theme['yellow-light']};
+	padding: 0.25rem 0.5rem;
+	border-radius: 6.25rem;
+
+	color: ${(props) => props.theme['yellow-dark']};
+	font-weight: bold;
+	font-size: 0.625rem;
+`;
+
+export const PriceValue = styled.p`
+	font-size: 0.875rem;
+
+	span {
+		font-family: 'Baloo 2';
+		font-size: 1.5rem;
+		font-weight: 800;
+	}
+`;
+
+export const NumberInput = styled.input`
+	width: 4.5rem;
+	padding: 0.5rem;
+	height: 2.375rem;
+	border-radius: 0.375rem;
+	border: none;
+	outline: none;
+	background-color: ${(props) => props.theme['base-button']};
 `;
