@@ -1,6 +1,6 @@
-import { coffeeListMock } from '../../../../mocks/coffeeMocks';
-import CoffeeCard from '../../../../components/CoffeeCard/CoffeeCard';
-import { Coffee } from '../../../../@types';
+import { Coffee } from '@/@types';
+import CoffeeCard from '@/components/CoffeeCard/CoffeeCard';
+import { coffeeListMock } from '@/mocks/coffeeMocks';
 import * as Styled from './styles';
 
 export function CoffeeList() {

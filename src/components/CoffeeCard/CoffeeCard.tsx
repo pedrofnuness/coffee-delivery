@@ -1,7 +1,7 @@
 import { ShoppingCartSimple } from 'phosphor-react';
+import { formatMoney } from '@/utils/formatMoney';
+import { Coffee } from '@/@types';
 import CardContainer from '../CardContainer/CardContainer';
-import { formatMoney } from '../../utils/formatMoney';
-import { Coffee } from '../../@types';
 import * as Styled from './styles';
 
 type CoffeeCardProps = {
