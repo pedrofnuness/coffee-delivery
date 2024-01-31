@@ -1,15 +1,6 @@
 /* eslint-disable prettier/prettier */
+import { Coffee } from '../@types';
 import * as coffeImage from '../assets';
-
-type CoffeeTypes = 'REGULAR' | 'ICED' | 'WITH_MILK' | 'SPECIALTY' | 'ALCOHOLIC';
-
-interface Coffee {
-  image: string;
-  type: CoffeeTypes[];
-  title: string;
-  description: string;
-  price: number;
-}
 
 export const coffeeListMock: Coffee[] = [
   {
