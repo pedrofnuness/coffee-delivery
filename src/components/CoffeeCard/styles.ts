@@ -40,6 +40,7 @@ export const PriceContainer = styled.div`
 `;
 
 export const AddToCartButton = styled.button`
+	cursor: pointer;
 	border: none;
 	padding: 0.5rem;
 	display: flex;
@@ -72,14 +73,4 @@ export const PriceValue = styled.p`
 		font-size: 1.5rem;
 		font-weight: 800;
 	}
-`;
-
-export const NumberInput = styled.input`
-	width: 4.5rem;
-	padding: 0.5rem;
-	height: 2.375rem;
-	border-radius: 0.375rem;
-	border: none;
-	outline: none;
-	background-color: ${(props) => props.theme['base-button']};
 `;

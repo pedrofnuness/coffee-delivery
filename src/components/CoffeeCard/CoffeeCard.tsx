@@ -2,6 +2,8 @@ import { ShoppingCartSimple } from 'phosphor-react';
 import { formatMoney } from '@/utils/formatMoney';
 import { Coffee } from '@/@types';
 import CardContainer from '../CardContainer/CardContainer';
+import QuantityInput from '../QuantityInput/QuantityInput';
+
 import * as Styled from './styles';
 
 type CoffeeCardProps = {
@@ -27,7 +29,8 @@ export default function CoffeeCard({ coffee }: CoffeeCardProps) {
 						<span>{formatMoney(coffee.price)}</span> €
 					</Styled.PriceValue>
 					<div className="pickQuantity">
-						<Styled.NumberInput type="number" />
+						<QuantityInput />
+
 						<Styled.AddToCartButton>
 							<ShoppingCartSimple size={22} weight="fill" color="white" />
 						</Styled.AddToCartButton>

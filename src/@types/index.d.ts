@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 
-export type CoffeeTypes = 'REGULAR' | 'ICED' | 'WITH_MILK' | 'SPECIALTY' | 'ALCOHOLIC';
+export type CoffeeTypes = 'REGULAR' | 'ICED' | 'WITH MILK' | 'SPECIALTY' | 'ALCOHOLIC';
 
 export interface Coffee {
   image: string;
