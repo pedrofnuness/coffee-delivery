@@ -4,15 +4,15 @@ import { coffeeListMock } from '@/mocks/coffeeMocks';
 import * as Styled from './styles';
 
 export function CoffeeList() {
-	return (
-		<Styled.ListContainer>
-			<h2>Our Coffees</h2>
+  return (
+    <Styled.ListContainer>
+      <h2>Our Coffees</h2>
 
-			<Styled.CofeeList>
-				{coffeeListMock.map((coffee: Coffee) => (
-					<CoffeeCard coffee={coffee} />
-				))}
-			</Styled.CofeeList>
-		</Styled.ListContainer>
-	);
+      <Styled.CofeeList>
+        {coffeeListMock.map((coffee: Coffee) => (
+          <CoffeeCard coffee={coffee} />
+        ))}
+      </Styled.CofeeList>
+    </Styled.ListContainer>
+  );
 }

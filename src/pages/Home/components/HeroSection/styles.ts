@@ -18,7 +18,7 @@ export const InfoContent = styled.div`
 `;
 
 export const Title = styled.h1`
-  color: ${props => props.theme['base-title']};
+  color: ${(props) => props.theme['base-title']};
   font-size: 3rem;
 `;
 
@@ -32,10 +32,10 @@ export const Content = styled.div`
   padding: 2rem;
   max-width: 74rem;
   gap: 3.5rem;
-  
+
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  
+
   @media (max-width: 1025px) {
     display: flex;
     flex-direction: column-reverse;
@@ -74,7 +74,7 @@ export const ColorIcon = styled.div<ColorIconProps>`
   align-items: center;
   border-radius: 50%;
 
-  background-color: ${props => props.theme[props.bgColor]};
+  background-color: ${(props) => props.theme[props.bgColor]};
 `;
 
 export const AboutItem = styled.div`
