@@ -1,4 +1,5 @@
 import { AddressForm } from './components/AddressForm/AddressForm';
+import { PaymentOptions } from './components/PaymentOptions/PaymentOptions';
 import * as Styled from './styles';
 
 export function CheckoutPage() {
@@ -9,6 +10,7 @@ export function CheckoutPage() {
           <h3>Complete your order</h3>
 
           <AddressForm />
+          <PaymentOptions />
         </Styled.LeftContent>
 
         <Styled.RightContent className="cart-items">

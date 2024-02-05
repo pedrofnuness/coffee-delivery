@@ -1,6 +1,7 @@
 import { ChangeEvent, useState } from 'react';
 import { MapPinLine } from 'phosphor-react';
 import * as Styled from './styles';
+import { Container, TitleContent } from '@/styles/shared';
 
 export function AddressForm() {
   const [zipCode, setZipCode] = useState('');
@@ -22,8 +23,8 @@ export function AddressForm() {
   };
 
   return (
-    <Styled.Container>
-      <Styled.TitleContent>
+    <Container>
+      <TitleContent>
         <MapPinLine size={22} />
         <div>
           <p className="title">Delivery address</p>
@@ -31,7 +32,7 @@ export function AddressForm() {
             Enter the address where you would like to receive your order
           </p>
         </div>
-      </Styled.TitleContent>
+      </TitleContent>
       <Styled.InputsContainer>
         <Styled.Input
           width="200px"
@@ -75,6 +76,6 @@ export function AddressForm() {
           />
         </Styled.SideToSideContainer>
       </Styled.InputsContainer>
-    </Styled.Container>
+    </Container>
   );
 }
