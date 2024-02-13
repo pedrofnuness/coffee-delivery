@@ -8,7 +8,11 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
 
-  max-width: 640px;
+  max-width: 40rem;
+
+  @media (max-width: 930px) {
+    max-width: 100%;
+  }
 `;
 
 export const TitleContent = styled.div`
@@ -38,4 +42,8 @@ export const CardContainer = styled.div`
 
   background-color: ${(props) => props.theme['base-card']};
   border-radius: 6px 36px;
+
+  @media (max-width: 930px) {
+    max-width: 100%;
+  }
 `;

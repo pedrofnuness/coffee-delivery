@@ -7,6 +7,10 @@ export const CartInsideContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+
+  @media (max-width: 930px) {
+    width: 100%;
+  }
 `;
 
 export const CartItemRow = styled.div`

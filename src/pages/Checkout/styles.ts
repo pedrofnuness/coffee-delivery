@@ -20,12 +20,8 @@ export const GridContent = styled.div`
   width: 100%;
   max-width: 70rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 930px) {
     grid-template-columns: 1fr;
-
-    .cart-items {
-      grid-row: 1;
-    }
   }
 `;
 
