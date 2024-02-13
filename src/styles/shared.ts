@@ -31,3 +31,11 @@ export const TitleContent = styled.div`
     color: ${({ theme }) => theme['base-text']};
   }
 `;
+
+export const CardContainer = styled.div`
+  max-width: fit-content;
+  max-height: fit-content;
+
+  background-color: ${(props) => props.theme['base-card']};
+  border-radius: 6px 36px;
+`;

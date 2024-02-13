@@ -33,8 +33,10 @@ export const LeftContent = styled.section`
   display: flex;
   flex-direction: column;
   gap: 0.938rem;
-
-  margin-bottom: 0.75rem;
 `;
 
-export const RightContent = styled.aside``;
+export const RightContent = styled.aside`
+  display: flex;
+  flex-direction: column;
+  gap: 0.938rem;
+`;
