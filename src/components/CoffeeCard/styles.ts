@@ -48,6 +48,10 @@ export const AddToCartButton = styled.button`
   align-items: center;
   border-radius: 8px;
   background-color: ${(props) => props.theme['purple-dark']};
+
+  &:hover {
+    background-color: ${(props) => props.theme['purple']};
+  }
 `;
 
 export const TypeContainer = styled.div`
