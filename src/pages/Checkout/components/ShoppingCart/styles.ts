@@ -55,6 +55,10 @@ export const RemoveButton = styled.button`
   svg {
     color: ${({ theme }) => theme['purple']};
   }
+
+  &:hover {
+    background-color: ${({ theme }) => theme['base-hover']};
+  }
 `;
 
 export const Price = styled.span`
@@ -104,4 +108,8 @@ export const ConfirmButton = styled.button`
 
   padding: 0.75rem;
   cursor: pointer;
+
+  &:hover {
+    background-color: ${({ theme }) => theme['yellow-dark']};
+  }
 `;
